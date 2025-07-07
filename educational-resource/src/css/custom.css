@@ -1,0 +1,204 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* === Infima Root === */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Fix for inline style prop error */
+.margin-top-negative {
+  margin-top: -0.5rem;
+}
+
+/* === HOMEPAGE CARD GRID === */
+
+.homepage {
+  background-color: #f9fafb;
+  padding: 3rem 1rem;
+}
+
+.homepage__container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.homepage__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.homepage__subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card-link {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  text-align: left;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+.card-bg-green {
+  background-color: #e6f4ea;
+  border: 4px solid #b4dfc5;
+}
+
+.card-bg-blue {
+  background-color: #e7f0fd;
+  border: 4px solid #b6c8f3;
+}
+
+.card-bg-purple {
+  background-color: #f3e8fd;
+  border: 4px solid #dabef3;
+}
+
+.card-bg-yellow {
+  background-color: #fff9db;
+  border: 4px solid #f4e99c;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #1c1c1c;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.card-headline {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* === HOT TOPICS: WORD CLOUD === */
+
+.hot-topics {
+  padding: 3rem 1rem;
+  background-color: #fdfdfd;
+}
+
+.hot-topics__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wordcloud-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.wordcloud-header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.wordcloud-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.wordcloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 2rem 1rem;
+}
+
+.word {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.word:hover {
+  transform: scale(1.08);
+  text-decoration: underline;
+}
+
+/* Font sizes */
+.word--xl { font-size: 3rem; }
+.word--lg { font-size: 2rem; }
+.word--md { font-size: 1.4rem; }
+
+/* Category colors */
+.word--concept { color: #1a7f37; }
+.word--tool { color: #1e40af; }
+.word--protocol { color: #7e22ce; }
+.word--use { color: #b45309; }
+.word--concern { color: #b91c1c; }
+
+/* Fake randomness */
+.rotate-left { transform: rotate(-4deg); }
+.rotate-right { transform: rotate(3deg); }
+.float-up { position: relative; top: -4px; }
+.float-down { position: relative; top: 4px; }
+
+.wordcloud {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+/* Ensure line structure is allowed */
+.wordcloud__row {
+  flex-wrap: wrap;
+}
+

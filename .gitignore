@@ -1,0 +1,24 @@
+# Dependencies
+educational-resource/node_modules
+
+# Production
+educational-resource/build
+
+# Generated files
+educational-resource/.docusaurus
+educational-resource/.cache-loader
+educational-resource/docs/99-contribute
+educational-resource/docs/**/index.md
+
+educational-resource/tooling/__pycache__
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+educational-resource/npm-debug.log*
+educational-resource/yarn-debug.log*
+educational-resource/yarn-error.log*
