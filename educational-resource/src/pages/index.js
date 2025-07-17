@@ -351,12 +351,118 @@ export default function Home() {
               Explore how Java + AI fits into specific industries:
             </p>
             <ul style={{ listStyle: 'none', paddingLeft: 0, columnCount: 2, columnGap: '2rem' }}>
-              <li><Link to="/docs/domain-use-cases/finance"><strong>Finance</strong></Link></li>
-              <li><Link to="/docs/domain-use-cases/healthcare"><strong>Healthcare</strong></Link></li>
-              <li><Link to="/docs/domain-use-cases/accessibility"><strong>Accessibility</strong></Link></li>
-              <li><Link to="/docs/domain-use-cases/scientific-research"><strong>Scientific Research</strong></Link></li>
-              <li><Link to="/docs/domain-use-cases/education"><strong>Education</strong></Link></li>
-              <li><Link to="/docs/domain-use-cases/ecommerce"><strong>eCommerce</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(230, 242, 255, 0.7)',
+                border: '1.5px solid #3399ff',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#1565c0',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/domain-use-cases/finance" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Finance</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(230, 242, 255, 0.7)',
+                border: '1.5px solid #3399ff',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#1565c0',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/domain-use-cases/healthcare" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Healthcare</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(230, 242, 255, 0.7)',
+                border: '1.5px solid #3399ff',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#1565c0',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/domain-use-cases/accessibility" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Accessibility</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(230, 242, 255, 0.7)',
+                border: '1.5px solid #3399ff',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#1565c0',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/domain-use-cases/scientific-research" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Scientific Research</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(230, 242, 255, 0.7)',
+                border: '1.5px solid #3399ff',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#1565c0',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/domain-use-cases/education" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Education</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(230, 242, 255, 0.7)',
+                border: '1.5px solid #3399ff',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#1565c0',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/domain-use-cases/ecommerce" style={{ color: 'inherit', textDecoration: 'none' }}><strong>eCommerce</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(230, 242, 255, 0.7)',
+                border: '1.5px solid #3399ff',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#1565c0',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/domain-use-cases/legal" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Legal</strong></Link></li>
             </ul>
           </section>
 

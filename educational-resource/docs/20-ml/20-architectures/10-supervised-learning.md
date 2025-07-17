@@ -1,17 +1,18 @@
 ---
-title: Which Model To Choose
-sidebar_position: 30
+title: Supervised Learning
+sidebar_position: 10
 hide_title: true
 
 # REQUIRED TAGS — fill in all of these:
 
 level: beginner        # beginner / intermediate / advanced / expert
 type: overview         # tutorial / overview / code / benchmark / opinion / api-doc
-status: missing          # draft / review-needed / published / missing
+status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:genai
+  - domain:ml
+  - architecture:supervised-learning
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
@@ -35,11 +36,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
+# Supervised Learning
 
-:::note ⚠️ This article is still missing
-This content has not been written yet. Help us create it!
-:::
-
-# Which Model To Choose
-
-Help us write this resource
+Help us write this page 

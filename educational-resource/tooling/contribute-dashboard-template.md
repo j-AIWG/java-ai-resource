@@ -12,7 +12,6 @@ Not sure where to start? Here's where you can make a big difference:
 
 - ❤️ [Write or add a much-needed resource](#high-impact-gaps)
 - 📝 [Review a draft](#needs-review)
-- 🆕 [See what's new](#recently-published)
 
 ---
 
@@ -33,16 +32,6 @@ These drafts are ready for feedback. Read and help polish them.
 | Article | Review Reason |
 |---------|---------------|
 {needs_review_table}
-
----
-
-## Recently Published
-
-Hot new content from the past 14 days.
-
-| Article |
-|---------|
-{recently_published_table}
 
 ---
 

@@ -29,7 +29,9 @@ jobs:
 
       - name: Run generate-mermaids.py
         run: |
-          python3 toolinggenerate_contribute_dashboard.py
+          python3 tooling/generate_contribute_dashboard.py
+          python3 tooling/generate_mermaid.py
+          python3 tooling/add-banners.py
 
       - name: Build Docusaurus site
         run: npm run build

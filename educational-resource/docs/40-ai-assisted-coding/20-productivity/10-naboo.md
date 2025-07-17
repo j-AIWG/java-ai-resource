@@ -1,6 +1,6 @@
 ---
-title: Image Recognition
-sidebar_position: 30
+title: Naboo
+sidebar_position: 10
 hide_title: true
 
 # REQUIRED TAGS — fill in all of these:
@@ -11,7 +11,8 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:ml
+  - domain:ai-assisted-coding
+  - tool:naboo
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
@@ -35,6 +36,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Image Recognition
+# Naboo
 
-Help us write this resource
+Help us write this page 

@@ -1,5 +1,5 @@
 ---
-title: Coding Tools
+title: Cursor
 sidebar_position: 10
 hide_title: true
 
@@ -12,6 +12,7 @@ visibility: public     # public
 
 topics:
   - domain:ai-assisted-coding
+  - tool:cursor
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
@@ -35,6 +36,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Coding Tools
+# Cursor
 
-Help us write this resource
+Help us write this page 

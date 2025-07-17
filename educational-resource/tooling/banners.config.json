@@ -1,0 +1,20 @@
+{
+  "banners": {
+    "status:missing": {
+      "type": "warning",
+      "title": "⚠️ This article is still missing",
+      "content": "This content has not been written yet. Help us create it!"
+    },
+    "status:stub": {
+      "type": "warning", 
+      "title": "⚠️ This article is a stub",
+      "content": "This article contains minimal content and needs to be expanded."
+    },
+    "status:review-needed": {
+      "type": "info",
+      "title": "👀 This article needs review",
+      "content_template": "This article needs review for the following reason: {review_reason}",
+      "requires_review_reason": true
+    }
+  }
+} 

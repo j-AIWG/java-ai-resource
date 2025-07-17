@@ -41,7 +41,6 @@ def load_style_config():
             return config
         
         tags_section = tags_content[brace_start + 1:brace_end - 1]
-        print(f"DEBUG: Tags section: {tags_section[:200]}...")
         
         # Parse each tag entry
         current_pos = 0
@@ -57,7 +56,6 @@ def load_style_config():
                 break
             
             key = tags_section[quote_start + 1:quote_end]
-            print(f"DEBUG: Found tag key: {key}")
             
             # Find the opening brace of the value
             brace_start = tags_section.find('{', quote_end)
@@ -78,7 +76,6 @@ def load_style_config():
                 break
             
             value_section = tags_section[brace_start + 1:brace_end - 1]
-            print(f"DEBUG: Value section for {key}: {value_section}")
             
             # Parse the value object
             properties = []
@@ -95,17 +92,14 @@ def load_style_config():
                     
                     if prop_key and prop_value:
                         properties.append((prop_key, prop_value))
-                        print(f"DEBUG: Added property {prop_key}: {prop_value} to {key}")
             
             # Add or merge the tag
             if key in config["tags"]:
                 # Key already exists, extend the list
                 config["tags"][key].extend(properties)
-                print(f"DEBUG: Extended existing tag {key} with {len(properties)} properties")
             else:
                 # New key, create list
                 config["tags"][key] = properties
-                print(f"DEBUG: Created new tag {key} with {len(properties)} properties")
             
             # Move to next tag
             current_pos = brace_end
@@ -113,10 +107,6 @@ def load_style_config():
             if comma_pos == -1:
                 break
             current_pos = comma_pos + 1
-        
-        print("DEBUG: Final config tags:")
-        for key, props in config["tags"].items():
-            print(f"  {key}: {props}")
         
         return config
     except Exception as e:

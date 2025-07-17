@@ -1,6 +1,6 @@
 ---
-title: Productivity
-sidebar_position: 20
+title: Generative Models
+sidebar_position: 40
 hide_title: true
 
 # REQUIRED TAGS — fill in all of these:
@@ -11,7 +11,8 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:ai-assisted-coding
+  - domain:ml
+  - architecture:generative-models
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
@@ -35,6 +36,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Productivity
+# Generative Models
 
-Help us write this resource
+Help us write this page 

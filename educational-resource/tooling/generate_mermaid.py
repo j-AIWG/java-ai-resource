@@ -130,9 +130,6 @@ def extract_tags_from_frontmatter(frontmatter):
 
 def apply_styling_to_node(tags, style_config, frontmatter=None):
     """Apply styling to a node based on tags and style config."""
-    print(f"DEBUG: apply_styling_to_node called with tags: {tags}")
-    print(f"DEBUG: style_config tags: {list(style_config.get('tags', {}).keys())}")
-    
     styles = {
         'left_icons': [],   # Icons for left side
         'right_icons': [],  # Icons for right side
@@ -147,30 +144,23 @@ def apply_styling_to_node(tags, style_config, frontmatter=None):
     
     # Process all config entries to accumulate properties
     for config_tag, tag_properties in style_config.get('tags', {}).items():
-        print(f"DEBUG: Processing config tag: {config_tag}")
-        print(f"DEBUG: Tag properties: {tag_properties}")
-        
         # Check if this config entry matches any of our tags
         tag_matches = False
         
         # Handle simple tags
         if config_tag in tags:
             tag_matches = True
-            print(f"DEBUG: Simple tag match: {config_tag}")
         
         # Handle complex conditions (AND conditions)
         elif ' AND ' in config_tag and frontmatter:
             if evaluate_tag_condition(config_tag, frontmatter):
                 tag_matches = True
-                print(f"DEBUG: Complex tag match: {config_tag}")
         
         # Apply all properties from matching tags
         if tag_matches:
-            print(f"DEBUG: Applying properties for {config_tag}")
             # Handle list of property tuples
             if isinstance(tag_properties, list):
                 for prop_key, prop_value in tag_properties:
-                    print(f"DEBUG: Processing property {prop_key}: {prop_value}")
                     if prop_key == 'icon':
                         # Check if this tag has icon_side specified
                         icon_side = 'left'  # default
@@ -181,16 +171,12 @@ def apply_styling_to_node(tags, style_config, frontmatter=None):
                         
                         if icon_side == 'right':
                             styles['right_icons'].append(prop_value)
-                            print(f"DEBUG: Added right icon: {prop_value}")
                         else:
                             styles['left_icons'].append(prop_value)
-                            print(f"DEBUG: Added left icon: {prop_value}")
                     elif prop_key == 'border_color':
                         styles['border_colors'].append(prop_value)
-                        print(f"DEBUG: Added border color: {prop_value}")
                     elif prop_key == 'background_color':
                         styles['background_colors'].append(prop_value)
-                        print(f"DEBUG: Added background color: {prop_value}")
                     elif prop_key == 'text_color':
                         styles['text_colors'].append(prop_value)
                     elif prop_key == 'border_style':
@@ -200,7 +186,6 @@ def apply_styling_to_node(tags, style_config, frontmatter=None):
                     elif prop_key == 'exclude':
                         styles['exclude'] = prop_value
     
-    print(f"DEBUG: Final styles: {styles}")
     return styles
 
 def create_mermaid_node_style(styles, default_fill=None):
@@ -309,6 +294,20 @@ def get_folder_sidebar_position(folder_path):
         return pos
     return float('inf')
 
+def extract_title_from_folder(folder_path):
+    """Extract title from a folder's index.md or _intro.md file."""
+    # Check for index.md first, then _intro.md
+    index_md_path = os.path.join(folder_path, "index.md")
+    intro_md_path = os.path.join(folder_path, "_intro.md")
+    
+    if os.path.isfile(index_md_path):
+        return extract_title(index_md_path)
+    elif os.path.isfile(intro_md_path):
+        return extract_title(intro_md_path)
+    else:
+        # Fallback to folder name processing
+        return strip_order_prefix(os.path.basename(folder_path)).replace("-", " ").title() or "Home"
+
 def build_mermaid(folder_path, rel_path, depth, parent_id=None, max_depth_override=None, style_config=None):
     if style_config is None:
         style_config = load_style_config()
@@ -318,7 +317,9 @@ def build_mermaid(folder_path, rel_path, depth, parent_id=None, max_depth_overri
     classes = {}
     style_classes = {}
     current_id = normalize_id(rel_path or "root")
-    label = strip_order_prefix(os.path.basename(folder_path)).replace("-", " ").title() or "Home"
+    
+    # Extract proper title from folder's index.md or _intro.md
+    label = extract_title_from_folder(folder_path)
     
     # Apply styling to folder nodes by checking index.md or _intro.md
     folder_styles = {'left_icons': [], 'right_icons': [], 'border_colors': [], 'background_colors': [], 'text_colors': [], 'border_styles': [], 'border_widths': [], 'clickable': True, 'exclude': False}
