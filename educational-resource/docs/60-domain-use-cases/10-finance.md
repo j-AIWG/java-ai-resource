@@ -1,6 +1,6 @@
 ---
-title: Scientific Research
-sidebar_position: 40
+title: Finance
+sidebar_position: 10
 hide_title: true
 
 # REQUIRED TAGS — fill in all of these:
@@ -11,13 +11,13 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:scientific-research
+  - domain:finance
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
 # 🧩 OPTIONAL TAGS:
 
-# article-priority: high   # high / medium — omit if not important
+# priority: high   # high / medium — omit if not important
 
 # collaboration: open      # set if author welcomes collaborators
 # collaboration-topic: "need help implementing Spring Boot starter examples"
@@ -35,6 +35,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Scientific Research
+# Finance
 
 Help us write this resource

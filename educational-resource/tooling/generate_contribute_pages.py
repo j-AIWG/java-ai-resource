@@ -366,16 +366,6 @@ def walk_docs():
     clean_contribute_folder()
     extract_contrib_guide()
     
-    # Import collaboration page creation function
-    try:
-        import sys
-        import os
-        sys.path.append(os.path.dirname(__file__))
-        from generate_collaborate_pages import create_collaboration_page, get_author_info, create_location_breadcrumb, create_discussion_link, get_suggested_contributions, load_style_config
-    except ImportError as e:
-        print(f"⚠️  Collaboration page generator not available: {e}")
-        create_collaboration_page = None
-    
     # Import review page creation function
     try:
         from generate_review_pages import create_review_page
@@ -387,7 +377,6 @@ def walk_docs():
     today = datetime.date.today()
     priority_map = {"high": "🔥", "medium": "❤️", "": "🤲"}
     gaps_by_priority = {"high": [], "medium": [], "": []}
-    collaboration_articles = []
     review_articles = []
     recent_articles = []
     
@@ -420,7 +409,6 @@ def walk_docs():
                     'status': status,
                     'author': author,
                     'priority': frontmatter.get('priority', ''),
-                    'article-priority': frontmatter.get('article-priority', ''),
                     'collaboration': collaboration,
                     'collaboration-topic': frontmatter.get('collaboration-topic', ''),
                     'review-reason': frontmatter.get('review-reason', ''),
@@ -434,27 +422,11 @@ def walk_docs():
                         # Create contribute page for unclaimed articles
                         create_contribution_page(abs_path, rel_path, frontmatter)
                         # Collect for high impact gaps (same logic as before)
-                        prio = frontmatter.get('article-priority', '')
+                        prio = frontmatter.get('priority', '')
                         prio = prio.strip().lower() if isinstance(prio, str) else ""
                         if prio not in gaps_by_priority:
                             prio = ""
                         gaps_by_priority[prio].append(article)
-                    elif collaboration == "open" and has_author:
-                        # Create collaboration page for claimed articles open for collaboration
-                        if create_collaboration_page:
-                            style_config = load_style_config()
-                            create_collaboration_page(abs_path, rel_path, frontmatter, style_config)
-                            collaboration_articles.append(article)
-                        else:
-                            print(f"⚠️  Cannot create collaboration page for {rel_path} - collaboration generator not available")
-                elif status in ["draft", "wip", "review-needed"] and collaboration == "open" and has_author:
-                    # Create collaboration page for in-progress articles open for collaboration
-                    if create_collaboration_page:
-                        style_config = load_style_config()
-                        create_collaboration_page(abs_path, rel_path, frontmatter, style_config)
-                        collaboration_articles.append(article)
-                    else:
-                        print(f"⚠️  Cannot create collaboration page for {rel_path} - collaboration generator not available")
                 
                 # Collect other dashboard data (same logic as before)
                 if status == "review-needed":
@@ -474,8 +446,6 @@ def walk_docs():
                     if mod_date and (today - mod_date).days <= 14:
                         recent_articles.append(article)
     
-    print(f"📊 Found {len(collaboration_articles)} articles open for collaboration")
-    
     # Generate dashboard tables (exact same logic as before)
     gap_rows = []
     for prio in ["high", "medium", ""]:
@@ -490,33 +460,6 @@ def walk_docs():
                 link = make_dashboard_breadcrumb_link(art['rel_path'], article_title=art['title'], to_contribute_page=True, root_dir=ROOT_DIR)
                 gap_rows.append(f'| {prio_icon} | {link} |')
     high_impact_gaps_table = '\n'.join(gap_rows) if gap_rows else '| _No high-impact gaps!_ |  |'
-
-    collabs = []
-    for art in collaboration_articles:
-        # Create breadcrumb link with max 2 upstream folders like contribute section
-        parts = art['rel_path'].split(os.sep)
-        if parts[-1].endswith('.md'):
-            parts[-1] = parts[-1][:-3]
-        upstreams = parts[:-1][-2:]  # Max 2 upstreams
-        crumb_text = []
-        for i, part in enumerate(upstreams):
-            folder_path = os.path.join(ROOT_DIR, *parts[:-(len(upstreams)-i)])
-            title = get_section_title(folder_path)
-            crumb_text.append(title)
-        art_title = art['title']
-        crumb_text.append(art_title)
-        text = " > ".join(crumb_text)
-        
-        # Create link to the collaboration page
-        collab_id = f"collaborate-{normalize_id(art['rel_path'])}"
-        docs_url = get_docs_url(f"contribute/{collab_id}")
-        collab_link = f'<a href="{docs_url}" target="_blank" rel="noopener noreferrer">{text}</a>'
-        
-        author = art.get('author', '')
-        eta = art.get('eta', '')
-        collaboration_topic = art.get('collaboration-topic', 'Help needed')
-        collabs.append(f'| {collab_link} | {author} | {eta} | {collaboration_topic} |')
-    open_to_collaboration_table = '\n'.join(collabs) if collabs else '| _No open collaborations!_ |  |  |  |'
 
     reviews = []
     for art in review_articles:
@@ -554,7 +497,6 @@ def walk_docs():
     dashboard_template = load_dashboard_template()
     dashboard_content = dashboard_template.format(
         high_impact_gaps_table=high_impact_gaps_table,
-        open_to_collaboration_table=open_to_collaboration_table,
         needs_review_table=needs_review_table,
         recently_published_table=recently_published_table
     )

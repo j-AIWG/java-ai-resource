@@ -1,7 +1,9 @@
 ---
-title: Welcome
-sidebar_position: 10
+title: Link 40 Ai Assisted Coding 10 Coding Tools
+sidebar_position: 20
 hide_title: true
+
+linked_resource: ../40-ai-assisted-coding-10/coding-tools.md
 
 # REQUIRED TAGS — fill in all of these:
 
@@ -11,13 +13,13 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:learning-paths
+  - domain:ai-assisted-coding
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
 # 🧩 OPTIONAL TAGS:
 
-# article-priority: high   # high / medium — omit if not important
+# priority: high   # high / medium — omit if not important
 
 # collaboration: open      # set if author welcomes collaborators
 # collaboration-topic: "need help implementing Spring Boot starter examples"
@@ -35,6 +37,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Welcome
+# Link 40 Ai Assisted Coding 10 Coding Tools
 
 Help us write this resource

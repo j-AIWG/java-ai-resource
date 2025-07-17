@@ -1,9 +1,7 @@
 ---
-title: Link 10 Genai 30 Using Llms In Code 30 Frameworks 10 Langchain4J
-sidebar_position: 30
+title: Optional Java Tricks
+sidebar_position: 80
 hide_title: true
-
-linked_resource: ../10-genai-30-using-llms-in-code-30-frameworks-10/langchain4j.md
 
 # REQUIRED TAGS — fill in all of these:
 
@@ -13,13 +11,13 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:genai
+  - domain:learning-paths
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
 # 🧩 OPTIONAL TAGS:
 
-# article-priority: high   # high / medium — omit if not important
+# priority: high   # high / medium — omit if not important
 
 # collaboration: open      # set if author welcomes collaborators
 # collaboration-topic: "need help implementing Spring Boot starter examples"
@@ -37,6 +35,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Link 10 Genai 30 Using Llms In Code 30 Frameworks 10 Langchain4J
+# Optional Java Tricks
 
 Help us write this resource

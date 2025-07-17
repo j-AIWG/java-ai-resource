@@ -1,6 +1,6 @@
 ---
-title: Now What
-sidebar_position: 90
+title: Welcome
+sidebar_position: 10
 hide_title: true
 
 # REQUIRED TAGS — fill in all of these:
@@ -17,7 +17,7 @@ topics:
 
 # 🧩 OPTIONAL TAGS:
 
-# article-priority: high   # high / medium — omit if not important
+# priority: high   # high / medium — omit if not important
 
 # collaboration: open      # set if author welcomes collaborators
 # collaboration-topic: "need help implementing Spring Boot starter examples"
@@ -35,6 +35,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Now What
+# Welcome
 
 Help us write this resource

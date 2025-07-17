@@ -1,0 +1,25 @@
+{
+  "flatmap_depth": 2,
+  "tags": {
+    "status:placeholder": { "icon": "🚧",  "icon_side": "right" },
+    "status:review-needed": { "icon": "👀",  "icon_side": "right" },
+    "type:code": { "icon": "💻" },
+    "type:tutorial": { "icon": "🙌" },
+    "type:benchmark": { "icon": "📊" },
+    "type:api-doc": { "icon": "📚" },
+    "type:overview": { "icon": "🧭" },
+    "type:external": { "icon": "🔗" },
+    "level:beginner": { "border_color": "green", "border_width": "4px" },
+    "level:intermediate": { "border_color": "yellow", "border_width": "4px" },
+    "level:advanced": { "border_color": "orange", "border_width": "4px" },
+    "level:expert": { "border_color": "red", "border_width": "4px" },
+    "status:draft": { "background_color": "lightgrey" },
+    "status:published": {},
+    "status:missing": { "background_color": "lightgrey" },
+    "status:review-needed": { "background_color": "lightgrey" },
+    "author:not_empty AND status:draft": { "icon": "👤", "icon_side": "right" },
+    "visibility:internal": { "exclude": true },
+    "visibility:archived": { "exclude": true }
+  }
+}
+  

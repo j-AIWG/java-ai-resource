@@ -1,6 +1,6 @@
 ---
-title: Accessibility
-sidebar_position: 30
+title: Your First Bot
+sidebar_position: 40
 hide_title: true
 
 # REQUIRED TAGS — fill in all of these:
@@ -11,13 +11,13 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:accessibility
+  - domain:learning-paths
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
 # 🧩 OPTIONAL TAGS:
 
-# article-priority: high   # high / medium — omit if not important
+# priority: high   # high / medium — omit if not important
 
 # collaboration: open      # set if author welcomes collaborators
 # collaboration-topic: "need help implementing Spring Boot starter examples"
@@ -35,6 +35,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Accessibility
+# Your First Bot
 
 Help us write this resource

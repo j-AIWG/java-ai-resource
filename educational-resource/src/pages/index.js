@@ -45,6 +45,26 @@ export default function Home() {
                   <strong>AI-assisted Coding</strong> <span style={{ color: '#888' }}>(tools that use AI to help you write code and apps)</span>
                 </Link>
               </li>
+              <li style={{ marginBottom: '1rem', marginTop: '1.5rem' }}>
+                <Link to="/docs/full-sitemap" style={{
+                  display: 'inline-block',
+                  background: 'rgba(230, 242, 255, 0.7)',
+                  border: '1.5px solid #3399ff',
+                  borderRadius: '0.5em',
+                  padding: '0.5em 1.2em',
+                  fontWeight: 'bold',
+                  fontSize: '1.18rem',
+                  color: '#1565c0',
+                  letterSpacing: '0.03em',
+                  boxShadow: '0 1px 6px 0 rgba(51,153,255,0.07)',
+                  textTransform: 'uppercase',
+                  textAlign: 'center',
+                  transition: 'background 0.2s, color 0.2s',
+                }}>
+                  <span role="img" aria-label="Sitemap" style={{ fontSize: '1.3em', verticalAlign: 'middle', marginRight: '0.5rem' }}>🗺️</span>
+                  OR EXPLORE THE FULL SITEMAP
+                </Link>
+              </li>
             </ul>
           </section>
 
@@ -52,34 +72,275 @@ export default function Home() {
           <section style={{ marginBottom: '3rem' }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>🔥 Hot Topics</h2>
             <ul style={{ listStyle: 'none', paddingLeft: 0, columnCount: 2, columnGap: '2rem' }}>
-              <li><Link to="/docs/ml/architectures/neural-networks"><strong>Neural Networks</strong></Link></li>
-              <li><Link to="/docs/genai/using-llms-in-code/functionality/content-retrieval"><strong>RAG (Retrieval-Augmented Generation)</strong></Link></li>
-              <li><Link to="/docs/genai/using-llms-in-code/functionality/content-retrieval/vector-dbs"><strong>Vector Databases</strong></Link></li>
-              <li><Link to="/docs/genai/using-llms-in-code/functionality/tool-calling"><strong>Tool / Function Calling</strong></Link></li>
-              <li><Link to="/docs/agentic-ai"><strong>Agents</strong></Link></li>
-              <li><Link to="/docs/genai/using-llms-in-code/functionality/chatbots"><strong>Chatbots</strong></Link></li>
-              <li><Link to="/docs/genai/inference"><strong>Model Inference</strong></Link></li>
-              <li><Link to="/docs/ml/training"><strong>Training Models</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/ml/architectures/neural-networks" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Neural Networks</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/genai/using-llms-in-code/functionality/content-retrieval" style={{ color: 'inherit', textDecoration: 'none' }}><strong>RAG (Retrieval-Augmented Generation)</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/genai/using-llms-in-code/functionality/content-retrieval/vector-dbs" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Vector Databases</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/genai/using-llms-in-code/functionality/tool-calling" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Tool / Function Calling</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/agentic-ai" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Agents</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/genai/using-llms-in-code/functionality/chatbots" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Chatbots</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/genai/inference" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Model Inference</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(255, 236, 179, 0.7)',
+                border: '1.5px solid #ff9800',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#e65100',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(255,152,0,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/ml/training" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Training Models</strong></Link></li>
             </ul>
           </section>
 
-          {/* Coming Soon */}
+          {/* Learning Paths */}
           <section style={{ marginBottom: '3rem' }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧑‍🎓 Learning Paths (Coming Soon)</h2>
             <p style={{ fontSize: '1.1rem' }}>
-              We're working on tailored learning journeys, including:
+              Structured learning journeys to help you get started faster:
             </p>
-            <ul style={{ listStyle: 'disc', paddingLeft: '1.5rem' }}>
-              <li><strong>New to Java</strong></li>
-              <li><strong>New to AI</strong></li>
-              <li><strong>New to ML</strong></li>
-              <li><strong>Training Your First Model</strong></li>
-              <li><strong>Building Your First AI-Powered App</strong></li>
-              <li><strong>LangChain4j Tutorial</strong></li>
-              <li><strong>Spring AI Tutorial</strong></li>
+            <ul style={{ listStyle: 'none', paddingLeft: 0, columnCount: 2, columnGap: '2rem' }}>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/new-to-java" style={{ color: 'inherit', textDecoration: 'none' }}><strong>New to Java</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/new-to-ai" style={{ color: 'inherit', textDecoration: 'none' }}><strong>New to AI</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/new-to-ml" style={{ color: 'inherit', textDecoration: 'none' }}><strong>New to ML</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/training-first-model" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Training Your First Model</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/building-first-ai-app" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Building Your First AI-Powered App</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/langchain4j-tutorial" style={{ color: 'inherit', textDecoration: 'none' }}><strong>LangChain4j Tutorial</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/spring-ai-tutorial" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Spring AI Tutorial</strong></Link></li>
+              <li style={{
+                marginBottom: '1.2rem',
+                breakInside: 'avoid',
+                background: 'rgba(232, 245, 233, 0.7)',
+                border: '1.5px solid #4caf50',
+                borderRadius: '0.5em',
+                padding: '0.6em 1em',
+                fontWeight: 'bold',
+                fontSize: '1.08rem',
+                color: '#2e7d32',
+                letterSpacing: '0.01em',
+                boxShadow: '0 1px 6px 0 rgba(76,175,80,0.07)',
+                textAlign: 'left',
+                transition: 'background 0.2s, color 0.2s',
+                display: 'block',
+              }}><Link to="/docs/learning-paths/finetune-your-first-model" style={{ color: 'inherit', textDecoration: 'none' }}><strong>Finetune Your First Model</strong></Link></li>
             </ul>
-            <p style={{ fontSize: '1.1rem' }}>
-              Check back soon for structured guides to help you get started faster!
+            <p style={{ fontSize: '1.1rem', fontStyle: 'italic' }}>
+              These learning paths are under development. Check back soon for complete guides!
             </p>
           </section>
 

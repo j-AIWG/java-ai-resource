@@ -1,6 +1,6 @@
 ---
-title: Ecommerce
-sidebar_position: 60
+title: Add Memory
+sidebar_position: 50
 hide_title: true
 
 # REQUIRED TAGS — fill in all of these:
@@ -11,13 +11,13 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:ecommerce
+  - domain:learning-paths
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
 # 🧩 OPTIONAL TAGS:
 
-# article-priority: high   # high / medium — omit if not important
+# priority: high   # high / medium — omit if not important
 
 # collaboration: open      # set if author welcomes collaborators
 # collaboration-topic: "need help implementing Spring Boot starter examples"
@@ -35,6 +35,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Ecommerce
+# Add Memory
 
 Help us write this resource

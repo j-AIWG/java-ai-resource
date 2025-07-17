@@ -1,7 +1,9 @@
 ---
-title: Add Memory
-sidebar_position: 50
+title: Link 10 Genai 30 Using Llms In Code 20 Functionality 30 Tool Calling 10 Overview
+sidebar_position: 60
 hide_title: true
+
+linked_resource: ../10-genai-30-using-llms-in-code-20-functionality-30-tool-calling-10/overview.md
 
 # REQUIRED TAGS — fill in all of these:
 
@@ -11,13 +13,13 @@ status: placeholder          # draft / review-needed / published / missing
 visibility: public     # public
 
 topics:
-  - domain:learning-paths
+  - domain:genai
   # Add one or more topical tags.
   # Where appropriate, use prefixes for easy filtering like provider:, framework:, tool:, runtime: whenever possible.
 
 # 🧩 OPTIONAL TAGS:
 
-# article-priority: high   # high / medium — omit if not important
+# priority: high   # high / medium — omit if not important
 
 # collaboration: open      # set if author welcomes collaborators
 # collaboration-topic: "need help implementing Spring Boot starter examples"
@@ -35,6 +37,6 @@ topics:
 # feature-priority: high         # suggested / medium / high
 # feature-responsible: openjdk   # community / openjdk / oracle-architects / jsr / vendor:redhat / project-lead:<name>
 ---
-# Add Memory
+# Link 10 Genai 30 Using Llms In Code 20 Functionality 30 Tool Calling 10 Overview
 
 Help us write this resource
