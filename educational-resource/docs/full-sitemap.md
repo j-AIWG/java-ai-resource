@@ -14,141 +14,143 @@ graph LR
 root["Docs"]
 full_sitemap_md["Full Site Map"]
 root --> full_sitemap_md
-n_10_genai["🧭 GenAI 👀"]
+n_10_genai["GenAI 👀"]
 root --> n_10_genai
-n_10_genai_10_genai_basics_md["🧭 GenAI Basics 🚧"]
+n_10_genai_10_genai_basics_md["GenAI Basics 🚧"]
 n_10_genai --> n_10_genai_10_genai_basics_md
-n_10_genai_20_all_about_models["🧭 All About Models"]
+n_10_genai_20_all_about_models["All About Models"]
 n_10_genai --> n_10_genai_20_all_about_models
-n_10_genai_20_all_about_models_10_llm_architecture_md["🧭 LLM Architecture"]
+n_10_genai_20_all_about_models_10_llm_architecture_md["LLM Architecture"]
 n_10_genai_20_all_about_models --> n_10_genai_20_all_about_models_10_llm_architecture_md
-n_10_genai_20_all_about_models_20_model_parameters_md["🧭 Model Parameters 🚧"]
+n_10_genai_20_all_about_models_20_model_parameters_md["Model Parameters 🚧"]
 n_10_genai_20_all_about_models --> n_10_genai_20_all_about_models_20_model_parameters_md
-n_10_genai_20_all_about_models_30_which_model_to_choose_md["🧭 Which Model To Choose"]
+n_10_genai_20_all_about_models_30_which_model_to_choose_md["Which Model To Choose"]
 n_10_genai_20_all_about_models --> n_10_genai_20_all_about_models_30_which_model_to_choose_md
-n_10_genai_20_all_about_models_40_model_providers["🧭 Model Providers"]
+n_10_genai_20_all_about_models_40_model_providers["Model Providers"]
 n_10_genai_20_all_about_models --> n_10_genai_20_all_about_models_40_model_providers
-n_10_genai_20_all_about_models_40_model_providers_10_commercial["🧭 Commercial 🚧"]
+n_10_genai_20_all_about_models_40_model_providers_10_commercial["Commercial 🚧"]
 n_10_genai_20_all_about_models_40_model_providers --> n_10_genai_20_all_about_models_40_model_providers_10_commercial
-n_10_genai_20_all_about_models_40_model_providers_10_commercial_10_openai_md["🧭 Openai 🚧"]
+n_10_genai_20_all_about_models_40_model_providers_10_commercial_10_openai_md["Openai 🚧"]
 n_10_genai_20_all_about_models_40_model_providers_10_commercial --> n_10_genai_20_all_about_models_40_model_providers_10_commercial_10_openai_md
-n_10_genai_20_all_about_models_40_model_providers_10_commercial_20_gemini_md["🧭 Gemini 🚧"]
+n_10_genai_20_all_about_models_40_model_providers_10_commercial_20_gemini_md["Gemini 🚧"]
 n_10_genai_20_all_about_models_40_model_providers_10_commercial --> n_10_genai_20_all_about_models_40_model_providers_10_commercial_20_gemini_md
-n_10_genai_20_all_about_models_40_model_providers_20_local["🧭 Local 🚧"]
+n_10_genai_20_all_about_models_40_model_providers_20_local["Local 🚧"]
 n_10_genai_20_all_about_models_40_model_providers --> n_10_genai_20_all_about_models_40_model_providers_20_local
-n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md["🧭 Huggingface 🚧"]
+n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md["Huggingface 🚧"]
 n_10_genai_20_all_about_models_40_model_providers_20_local --> n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md
-n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md["🧭 Ollama 🚧"]
+n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md["Ollama 🚧"]
 n_10_genai_20_all_about_models_40_model_providers_20_local --> n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md
-n_10_genai_30_using_llms_in_code["🧭 Using LLMs in Code"]
+n_10_genai_30_using_llms_in_code["Using LLMs in Code"]
 n_10_genai --> n_10_genai_30_using_llms_in_code
-n_10_genai_30_using_llms_in_code_10_basics_md["🧭 Basics 🚧"]
+n_10_genai_30_using_llms_in_code_10_basics_md["Basics 🚧"]
 n_10_genai_30_using_llms_in_code --> n_10_genai_30_using_llms_in_code_10_basics_md
-n_10_genai_30_using_llms_in_code_20_functionality["🧭 Functionality 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality["Functionality 🚧"]
 n_10_genai_30_using_llms_in_code --> n_10_genai_30_using_llms_in_code_20_functionality
-n_10_genai_30_using_llms_in_code_20_functionality_10_chatbots_md["🧭 Chatbots 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_10_chatbots_md["Chatbots 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality --> n_10_genai_30_using_llms_in_code_20_functionality_10_chatbots_md
-n_10_genai_30_using_llms_in_code_20_functionality_20_memory_md["🧭 Memory 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_20_memory_md["Memory 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality --> n_10_genai_30_using_llms_in_code_20_functionality_20_memory_md
-n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling["🧭 Tool Calling 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling["Tool Calling 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality --> n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling
-n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md["🧭 Overview 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md["Overview 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling --> n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md
-n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_20_function_calling_md["🧭 Function Calling 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_20_function_calling_md["Function Calling 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling --> n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_20_function_calling_md
-n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_30_mcp_md["🧭 Mcp 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_30_mcp_md["Mcp 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling --> n_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_30_mcp_md
-n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval["🧭 Content Retrieval 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval["Content Retrieval 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality --> n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval
-n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_10_semantic_search_md["🧭 Semantic Search 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_10_semantic_search_md["Semantic Search 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval --> n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_10_semantic_search_md
-n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_20_chunking_md["🧭 Chunking 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_20_chunking_md["Chunking 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval --> n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_20_chunking_md
-n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs["🧭 Vector Dbs 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs["Vector Dbs 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval --> n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs
-n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_10_overview_md["🧭 Overview 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_10_overview_md["Overview 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs --> n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_10_overview_md
-n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_20_providers_md["🧭 Providers 🚧"]
+n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_20_providers_md["Providers 🚧"]
 n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs --> n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_20_providers_md
-n_10_genai_30_using_llms_in_code_30_frameworks["🧭 Frameworks 🚧"]
+n_10_genai_30_using_llms_in_code_30_frameworks["Frameworks 🚧"]
 n_10_genai_30_using_llms_in_code --> n_10_genai_30_using_llms_in_code_30_frameworks
-n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md["🧭 Langchain4J 🚧"]
-n_10_genai_30_using_llms_in_code_30_frameworks --> n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md
-n_10_genai_30_using_llms_in_code_30_frameworks_20_springai_md["🧭 SpringAI 🚧"]
+n_10_genai_30_using_llms_in_code_30_frameworks_20_springai_md["SpringAI 🚧"]
 n_10_genai_30_using_llms_in_code_30_frameworks --> n_10_genai_30_using_llms_in_code_30_frameworks_20_springai_md
-n_10_genai_40_inference["🧭 Inference 🚧"]
+n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j["LangChain4j 🚧"]
+n_10_genai_30_using_llms_in_code_30_frameworks --> n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j
+n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_10_langchain4j_doc_md["Langchain4j Documentation 🚧"]
+n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j --> n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_10_langchain4j_doc_md
+n_10_genai_40_inference["Inference 🚧"]
 n_10_genai --> n_10_genai_40_inference
-n_10_genai_40_inference_10_local_md["🧭 Local 🚧"]
+n_10_genai_40_inference_10_local_md["Local 🚧"]
 n_10_genai_40_inference --> n_10_genai_40_inference_10_local_md
-n_10_genai_40_inference_20_cloud_md["🧭 Cloud 🚧"]
+n_10_genai_40_inference_20_cloud_md["Cloud 🚧"]
 n_10_genai_40_inference --> n_10_genai_40_inference_20_cloud_md
-n_20_ml["🧭 Machine Learning 🚧"]
+n_20_ml["Machine Learning 🚧"]
 root --> n_20_ml
-n_20_ml_10_fundamentals_md["🧭 Fundamentals 🚧"]
+n_20_ml_10_fundamentals_md["Fundamentals 🚧"]
 n_20_ml --> n_20_ml_10_fundamentals_md
-n_20_ml_50_gpu_md["🧭 Gpu 🚧"]
+n_20_ml_50_gpu_md["Gpu 🚧"]
 n_20_ml --> n_20_ml_50_gpu_md
-n_20_ml_20_architectures["🧭 Architectures 👀"]
+n_20_ml_20_architectures["Architectures 👀"]
 n_20_ml --> n_20_ml_20_architectures
-n_20_ml_20_architectures_10_supervised_learning_md["🧭 Supervised Learning 🚧"]
+n_20_ml_20_architectures_10_supervised_learning_md["Supervised Learning 🚧"]
 n_20_ml_20_architectures --> n_20_ml_20_architectures_10_supervised_learning_md
-n_20_ml_20_architectures_20_unsupervised_learning_md["🧭 Unsupervised Learning 🚧"]
+n_20_ml_20_architectures_20_unsupervised_learning_md["Unsupervised Learning 🚧"]
 n_20_ml_20_architectures --> n_20_ml_20_architectures_20_unsupervised_learning_md
-n_20_ml_20_architectures_30_reinforcement_learning_md["🧭 Reinforcement Learning 🚧"]
+n_20_ml_20_architectures_30_reinforcement_learning_md["Reinforcement Learning 🚧"]
 n_20_ml_20_architectures --> n_20_ml_20_architectures_30_reinforcement_learning_md
-n_20_ml_20_architectures_40_generative_models_md["🧭 Generative Models 🚧"]
+n_20_ml_20_architectures_40_generative_models_md["Generative Models 🚧"]
 n_20_ml_20_architectures --> n_20_ml_20_architectures_40_generative_models_md
-n_20_ml_20_architectures_50_foundation_transformer_md["🧭 Foundation/Transformer 🚧"]
+n_20_ml_20_architectures_50_foundation_transformer_md["Foundation/Transformer 🚧"]
 n_20_ml_20_architectures --> n_20_ml_20_architectures_50_foundation_transformer_md
-n_20_ml_30_training["🧭 Training 🚧"]
+n_20_ml_30_training["Training 🚧"]
 n_20_ml --> n_20_ml_30_training
-n_20_ml_30_training_10_basics_md["🧭 Basics 🚧"]
+n_20_ml_30_training_10_basics_md["Basics 🚧"]
 n_20_ml_30_training --> n_20_ml_30_training_10_basics_md
-n_20_ml_30_training_20_data_prep_md["🧭 Data Prep 🚧"]
+n_20_ml_30_training_20_data_prep_md["Data Prep 🚧"]
 n_20_ml_30_training --> n_20_ml_30_training_20_data_prep_md
-n_20_ml_30_training_30_finetuning_md["🧭 Finetuning 🚧"]
+n_20_ml_30_training_30_finetuning_md["Finetuning 🚧"]
 n_20_ml_30_training --> n_20_ml_30_training_30_finetuning_md
-n_20_ml_30_training_40_evaluation_md["🧭 Evaluation 🚧"]
+n_20_ml_30_training_40_evaluation_md["Evaluation 🚧"]
 n_20_ml_30_training --> n_20_ml_30_training_40_evaluation_md
-n_20_ml_40_frameworks["🧭 Frameworks 🚧"]
+n_20_ml_40_frameworks["Frameworks 🚧"]
 n_20_ml --> n_20_ml_40_frameworks
-n_20_ml_40_frameworks_10_deepnetts_md["🧭 DeepNetts 🚧"]
+n_20_ml_40_frameworks_10_deepnetts_md["DeepNetts 🚧"]
 n_20_ml_40_frameworks --> n_20_ml_40_frameworks_10_deepnetts_md
-n_20_ml_40_frameworks_20_deeplearning4j_md["🧭 DeepLearning4J 🚧"]
+n_20_ml_40_frameworks_20_deeplearning4j_md["DeepLearning4J 🚧"]
 n_20_ml_40_frameworks --> n_20_ml_40_frameworks_20_deeplearning4j_md
-n_20_ml_40_frameworks_30_djl_md["🧭 DJL 🚧"]
+n_20_ml_40_frameworks_30_djl_md["DJL 🚧"]
 n_20_ml_40_frameworks --> n_20_ml_40_frameworks_30_djl_md
-n_20_ml_40_frameworks_40_project_babylon_md["🧭 Project Babylon 🚧"]
+n_20_ml_40_frameworks_40_project_babylon_md["Project Babylon 🚧"]
 n_20_ml_40_frameworks --> n_20_ml_40_frameworks_40_project_babylon_md
-n_30_agentic_ai["🧭 Agentic AI 🚧"]
+n_30_agentic_ai["Agentic AI 🚧"]
 root --> n_30_agentic_ai
-n_30_agentic_ai_10_patterns_md["🧭 Patterns 🚧"]
+n_30_agentic_ai_10_patterns_md["Patterns 🚧"]
 n_30_agentic_ai --> n_30_agentic_ai_10_patterns_md
-n_30_agentic_ai_30_applications_md["🧭 Applications 🚧"]
+n_30_agentic_ai_30_applications_md["Applications 🚧"]
 n_30_agentic_ai --> n_30_agentic_ai_30_applications_md
-n_30_agentic_ai_20_frameworks["🧭 Frameworks 🚧"]
+n_30_agentic_ai_20_frameworks["Frameworks 🚧"]
 n_30_agentic_ai --> n_30_agentic_ai_20_frameworks
-n_30_agentic_ai_20_frameworks_10_adk_md["🧭 Adk 🚧"]
+n_30_agentic_ai_20_frameworks_10_adk_md["Adk 🚧"]
 n_30_agentic_ai_20_frameworks --> n_30_agentic_ai_20_frameworks_10_adk_md
-n_30_agentic_ai_20_frameworks_20_langgraph4j_md["🧭 Langgraph4J 🚧"]
+n_30_agentic_ai_20_frameworks_20_langgraph4j_md["Langgraph4J 🚧"]
 n_30_agentic_ai_20_frameworks --> n_30_agentic_ai_20_frameworks_20_langgraph4j_md
-n_30_agentic_ai_20_frameworks_30_jai_workflow_md["🧭 jAI Workflow 🚧"]
+n_30_agentic_ai_20_frameworks_30_jai_workflow_md["jAI Workflow 🚧"]
 n_30_agentic_ai_20_frameworks --> n_30_agentic_ai_20_frameworks_30_jai_workflow_md
-n_30_agentic_ai_20_frameworks_40_a2a_protocol_md["🧭 A2A Protocol 🚧"]
+n_30_agentic_ai_20_frameworks_40_a2a_protocol_md["A2A Protocol 🚧"]
 n_30_agentic_ai_20_frameworks --> n_30_agentic_ai_20_frameworks_40_a2a_protocol_md
-n_40_ai_assisted_coding["🧭 AI Assisted Coding 🚧"]
+n_40_ai_assisted_coding["AI Assisted Coding 🚧"]
 root --> n_40_ai_assisted_coding
-n_40_ai_assisted_coding_10_coding_tools["🧭 Coding Tools 🚧"]
+n_40_ai_assisted_coding_10_coding_tools["Coding Tools 🚧"]
 n_40_ai_assisted_coding --> n_40_ai_assisted_coding_10_coding_tools
-n_40_ai_assisted_coding_10_coding_tools_10_cursor_md["🧭 Cursor 🚧"]
+n_40_ai_assisted_coding_10_coding_tools_10_cursor_md["Cursor 🚧"]
 n_40_ai_assisted_coding_10_coding_tools --> n_40_ai_assisted_coding_10_coding_tools_10_cursor_md
-n_40_ai_assisted_coding_10_coding_tools_20_windsurf_md["🧭 Windsurf 🚧"]
+n_40_ai_assisted_coding_10_coding_tools_20_windsurf_md["Windsurf 🚧"]
 n_40_ai_assisted_coding_10_coding_tools --> n_40_ai_assisted_coding_10_coding_tools_20_windsurf_md
-n_40_ai_assisted_coding_10_coding_tools_30_qodo_md["🧭 Qodo 🚧"]
+n_40_ai_assisted_coding_10_coding_tools_30_qodo_md["Qodo 🚧"]
 n_40_ai_assisted_coding_10_coding_tools --> n_40_ai_assisted_coding_10_coding_tools_30_qodo_md
-n_40_ai_assisted_coding_20_productivity["🧭 Productivity 🚧"]
+n_40_ai_assisted_coding_20_productivity["Productivity 🚧"]
 n_40_ai_assisted_coding --> n_40_ai_assisted_coding_20_productivity
-n_40_ai_assisted_coding_20_productivity_10_naboo_md["🧭 Naboo 🚧"]
+n_40_ai_assisted_coding_20_productivity_10_naboo_md["Naboo 🚧"]
 n_40_ai_assisted_coding_20_productivity --> n_40_ai_assisted_coding_20_productivity_10_naboo_md
 n_50_ethics["Ethics, Law, Security"]
 root --> n_50_ethics
@@ -158,59 +160,59 @@ n_50_ethics_20_legislation["Legislation"]
 n_50_ethics --> n_50_ethics_20_legislation
 n_50_ethics_30_security["Security"]
 n_50_ethics --> n_50_ethics_30_security
-n_60_domain_use_cases["🧭 Domain Use Cases 🚧"]
+n_60_domain_use_cases["Domain Use Cases 🚧"]
 root --> n_60_domain_use_cases
-n_60_domain_use_cases_10_finance_md["🧭 Finance 🚧"]
+n_60_domain_use_cases_10_finance_md["Finance 🚧"]
 n_60_domain_use_cases --> n_60_domain_use_cases_10_finance_md
-n_60_domain_use_cases_20_healthcare_md["🧭 Healthcare 🚧"]
+n_60_domain_use_cases_20_healthcare_md["Healthcare 🚧"]
 n_60_domain_use_cases --> n_60_domain_use_cases_20_healthcare_md
-n_60_domain_use_cases_30_accessibility_md["🧭 Accessibility 🚧"]
+n_60_domain_use_cases_30_accessibility_md["Accessibility 🚧"]
 n_60_domain_use_cases --> n_60_domain_use_cases_30_accessibility_md
-n_60_domain_use_cases_40_scientific_research_md["🧭 Scientific Research 🚧"]
+n_60_domain_use_cases_40_scientific_research_md["Scientific Research 🚧"]
 n_60_domain_use_cases --> n_60_domain_use_cases_40_scientific_research_md
-n_60_domain_use_cases_50_education_md["🧭 Education 🚧"]
+n_60_domain_use_cases_50_education_md["Education 🚧"]
 n_60_domain_use_cases --> n_60_domain_use_cases_50_education_md
-n_60_domain_use_cases_60_ecommerce_md["🧭 Ecommerce 🚧"]
+n_60_domain_use_cases_60_ecommerce_md["Ecommerce 🚧"]
 n_60_domain_use_cases --> n_60_domain_use_cases_60_ecommerce_md
-n_60_domain_use_cases_70_legal_md["🧭 Legal 🚧"]
+n_60_domain_use_cases_70_legal_md["Legal 🚧"]
 n_60_domain_use_cases --> n_60_domain_use_cases_70_legal_md
-n_70_learning_paths["🧭 Learning Paths 🚧"]
+n_70_learning_paths["Learning Paths 🚧"]
 root --> n_70_learning_paths
-n_70_learning_paths_10_new_to_java_for_ai["🧭 New To Java For Ai 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai["New To Java For Ai 🚧"]
 n_70_learning_paths --> n_70_learning_paths_10_new_to_java_for_ai
-n_70_learning_paths_10_new_to_java_for_ai_10_welcome_md["🧭 Welcome 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_10_welcome_md["Welcome 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_10_welcome_md
-n_70_learning_paths_10_new_to_java_for_ai_20_link_40_ai_assisted_coding_10_coding_tools_md["🧭 Link 40 Ai Assisted Coding 10 Coding Tools 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_20_link_40_ai_assisted_coding_10_coding_tools_md["Link 40 Ai Assisted Coding 10 Coding Tools 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_20_link_40_ai_assisted_coding_10_coding_tools_md
-n_70_learning_paths_10_new_to_java_for_ai_30_link_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md["🧭 Link 10 Genai 30 Using Llms In Code 30 Frameworks 10 Langchain4J 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_30_link_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md["Link 10 Genai 30 Using Llms In Code 30 Frameworks 10 Langchain4J 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_30_link_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md
-n_70_learning_paths_10_new_to_java_for_ai_40_your_first_bot_md["🧭 Your First Bot 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_40_your_first_bot_md["Your First Bot 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_40_your_first_bot_md
-n_70_learning_paths_10_new_to_java_for_ai_50_add_memory_md["🧭 Add Memory 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_50_add_memory_md["Add Memory 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_50_add_memory_md
-n_70_learning_paths_10_new_to_java_for_ai_60_link_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md["🧭 Link 10 Genai 30 Using Llms In Code 20 Functionality 30 Tool Calling 10 Overview 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_60_link_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md["Link 10 Genai 30 Using Llms In Code 20 Functionality 30 Tool Calling 10 Overview 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_60_link_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md
-n_70_learning_paths_10_new_to_java_for_ai_70_deploy_md["🧭 Deploy 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_70_deploy_md["Deploy 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_70_deploy_md
-n_70_learning_paths_10_new_to_java_for_ai_80_optional_java_tricks_md["🧭 Optional Java Tricks 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_80_optional_java_tricks_md["Optional Java Tricks 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_80_optional_java_tricks_md
-n_70_learning_paths_10_new_to_java_for_ai_90_now_what_md["🧭 Now What 🚧"]
+n_70_learning_paths_10_new_to_java_for_ai_90_now_what_md["Now What 🚧"]
 n_70_learning_paths_10_new_to_java_for_ai --> n_70_learning_paths_10_new_to_java_for_ai_90_now_what_md
-n_70_learning_paths_20_finetune_your_first_model["🙌 Finetune Your First Model 👀"]
+n_70_learning_paths_20_finetune_your_first_model["Finetune Your First Model 👀"]
 n_70_learning_paths --> n_70_learning_paths_20_finetune_your_first_model
-n_70_learning_paths_30_new_to_java["🙌 New to Java 👀"]
+n_70_learning_paths_30_new_to_java["New to Java 👀"]
 n_70_learning_paths --> n_70_learning_paths_30_new_to_java
-n_70_learning_paths_40_new_to_ai["🙌 New to AI 👀"]
+n_70_learning_paths_40_new_to_ai["New to AI 👀"]
 n_70_learning_paths --> n_70_learning_paths_40_new_to_ai
-n_70_learning_paths_50_new_to_ml["🙌 New to ML 👀"]
+n_70_learning_paths_50_new_to_ml["New to ML 👀"]
 n_70_learning_paths --> n_70_learning_paths_50_new_to_ml
-n_70_learning_paths_60_training_first_model["🙌 Training Your First Model 👀"]
+n_70_learning_paths_60_training_first_model["Training Your First Model 👀"]
 n_70_learning_paths --> n_70_learning_paths_60_training_first_model
-n_70_learning_paths_70_building_first_ai_app["🙌 Building Your First AI-Powered App 👀"]
+n_70_learning_paths_70_building_first_ai_app["Building Your First AI-Powered App 👀"]
 n_70_learning_paths --> n_70_learning_paths_70_building_first_ai_app
-n_70_learning_paths_80_langchain4j_tutorial["🙌 LangChain4j Tutorial 👀"]
+n_70_learning_paths_80_langchain4j_tutorial["LangChain4j Tutorial 👀"]
 n_70_learning_paths --> n_70_learning_paths_80_langchain4j_tutorial
-n_70_learning_paths_90_spring_ai_tutorial["🙌 Spring AI Tutorial 👀"]
+n_70_learning_paths_90_spring_ai_tutorial["Spring AI Tutorial 👀"]
 n_70_learning_paths --> n_70_learning_paths_90_spring_ai_tutorial
 click full_sitemap_md "/ai-resource/docs/full-sitemap"
 click n_10_genai "/ai-resource/docs/genai"
@@ -242,8 +244,9 @@ click n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_
 click n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_10_overview_md "/ai-resource/docs/genai/using-llms-in-code/functionality/content-retrieval/vector-dbs/overview"
 click n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_vector_dbs_20_providers_md "/ai-resource/docs/genai/using-llms-in-code/functionality/content-retrieval/vector-dbs/providers"
 click n_10_genai_30_using_llms_in_code_30_frameworks "/ai-resource/docs/genai/using-llms-in-code/frameworks"
-click n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md "/ai-resource/docs/genai/using-llms-in-code/frameworks/langchain4j"
 click n_10_genai_30_using_llms_in_code_30_frameworks_20_springai_md "/ai-resource/docs/genai/using-llms-in-code/frameworks/springai"
+click n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j "/ai-resource/docs/genai/using-llms-in-code/frameworks/langchain4j"
+click n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_10_langchain4j_doc_md "/ai-resource/docs/genai/using-llms-in-code/frameworks/langchain4j/langchain4j-doc"
 click n_10_genai_40_inference "/ai-resource/docs/genai/inference"
 click n_10_genai_40_inference_10_local_md "/ai-resource/docs/genai/inference/local"
 click n_10_genai_40_inference_20_cloud_md "/ai-resource/docs/genai/inference/cloud"
@@ -386,145 +389,147 @@ class n_10_genai_30_using_llms_in_code_20_functionality_40_content_retrieval_30_
 classDef custom30 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
 class n_10_genai_30_using_llms_in_code_30_frameworks custom30;
 classDef custom31 fill:#d0f0c0,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md custom31;
+class n_10_genai_30_using_llms_in_code_30_frameworks_20_springai_md custom31;
 classDef custom32 fill:#d0f0c0,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_10_genai_30_using_llms_in_code_30_frameworks_20_springai_md custom32;
-classDef custom33 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_10_genai_40_inference custom33;
-classDef custom34 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_10_genai_40_inference_10_local_md custom34;
+class n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j custom32;
+classDef custom33 fill:#b3d9ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_10_langchain4j_doc_md custom33;
+classDef custom34 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_10_genai_40_inference custom34;
 classDef custom35 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_10_genai_40_inference_20_cloud_md custom35;
-classDef custom36 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml custom36;
-classDef custom37 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_10_fundamentals_md custom37;
+class n_10_genai_40_inference_10_local_md custom35;
+classDef custom36 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_10_genai_40_inference_20_cloud_md custom36;
+classDef custom37 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml custom37;
 classDef custom38 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_50_gpu_md custom38;
-classDef custom39 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_20_architectures custom39;
-classDef custom40 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_20_architectures_10_supervised_learning_md custom40;
+class n_20_ml_10_fundamentals_md custom38;
+classDef custom39 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml_50_gpu_md custom39;
+classDef custom40 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml_20_architectures custom40;
 classDef custom41 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_20_architectures_20_unsupervised_learning_md custom41;
+class n_20_ml_20_architectures_10_supervised_learning_md custom41;
 classDef custom42 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_20_architectures_30_reinforcement_learning_md custom42;
+class n_20_ml_20_architectures_20_unsupervised_learning_md custom42;
 classDef custom43 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_20_architectures_40_generative_models_md custom43;
+class n_20_ml_20_architectures_30_reinforcement_learning_md custom43;
 classDef custom44 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_20_architectures_50_foundation_transformer_md custom44;
-classDef custom45 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_30_training custom45;
-classDef custom46 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_30_training_10_basics_md custom46;
+class n_20_ml_20_architectures_40_generative_models_md custom44;
+classDef custom45 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml_20_architectures_50_foundation_transformer_md custom45;
+classDef custom46 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml_30_training custom46;
 classDef custom47 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_30_training_20_data_prep_md custom47;
+class n_20_ml_30_training_10_basics_md custom47;
 classDef custom48 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_30_training_30_finetuning_md custom48;
+class n_20_ml_30_training_20_data_prep_md custom48;
 classDef custom49 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_30_training_40_evaluation_md custom49;
-classDef custom50 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_40_frameworks custom50;
-classDef custom51 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_40_frameworks_10_deepnetts_md custom51;
+class n_20_ml_30_training_30_finetuning_md custom49;
+classDef custom50 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml_30_training_40_evaluation_md custom50;
+classDef custom51 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml_40_frameworks custom51;
 classDef custom52 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_40_frameworks_20_deeplearning4j_md custom52;
+class n_20_ml_40_frameworks_10_deepnetts_md custom52;
 classDef custom53 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_40_frameworks_30_djl_md custom53;
+class n_20_ml_40_frameworks_20_deeplearning4j_md custom53;
 classDef custom54 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_20_ml_40_frameworks_40_project_babylon_md custom54;
-classDef custom55 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai custom55;
-classDef custom56 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai_10_patterns_md custom56;
+class n_20_ml_40_frameworks_30_djl_md custom54;
+classDef custom55 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_20_ml_40_frameworks_40_project_babylon_md custom55;
+classDef custom56 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_30_agentic_ai custom56;
 classDef custom57 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai_30_applications_md custom57;
+class n_30_agentic_ai_10_patterns_md custom57;
 classDef custom58 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai_20_frameworks custom58;
-classDef custom59 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai_20_frameworks_10_adk_md custom59;
+class n_30_agentic_ai_30_applications_md custom58;
+classDef custom59 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_30_agentic_ai_20_frameworks custom59;
 classDef custom60 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai_20_frameworks_20_langgraph4j_md custom60;
+class n_30_agentic_ai_20_frameworks_10_adk_md custom60;
 classDef custom61 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai_20_frameworks_30_jai_workflow_md custom61;
+class n_30_agentic_ai_20_frameworks_20_langgraph4j_md custom61;
 classDef custom62 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_30_agentic_ai_20_frameworks_40_a2a_protocol_md custom62;
-classDef custom63 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_40_ai_assisted_coding custom63;
-classDef custom64 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_40_ai_assisted_coding_10_coding_tools custom64;
-classDef custom65 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_40_ai_assisted_coding_10_coding_tools_10_cursor_md custom65;
+class n_30_agentic_ai_20_frameworks_30_jai_workflow_md custom62;
+classDef custom63 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_30_agentic_ai_20_frameworks_40_a2a_protocol_md custom63;
+classDef custom64 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_40_ai_assisted_coding custom64;
+classDef custom65 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_40_ai_assisted_coding_10_coding_tools custom65;
 classDef custom66 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_40_ai_assisted_coding_10_coding_tools_20_windsurf_md custom66;
+class n_40_ai_assisted_coding_10_coding_tools_10_cursor_md custom66;
 classDef custom67 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_40_ai_assisted_coding_10_coding_tools_30_qodo_md custom67;
-classDef custom68 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_40_ai_assisted_coding_20_productivity custom68;
-classDef custom69 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_40_ai_assisted_coding_20_productivity_10_naboo_md custom69;
-classDef custom70 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_50_ethics custom70;
-classDef custom71 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_50_ethics_10_ethical_ai custom71;
-classDef custom72 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_50_ethics_20_legislation custom72;
+class n_40_ai_assisted_coding_10_coding_tools_20_windsurf_md custom67;
+classDef custom68 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_40_ai_assisted_coding_10_coding_tools_30_qodo_md custom68;
+classDef custom69 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_40_ai_assisted_coding_20_productivity custom69;
+classDef custom70 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_40_ai_assisted_coding_20_productivity_10_naboo_md custom70;
+classDef custom71 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
+class n_50_ethics custom71;
+classDef custom72 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_50_ethics_10_ethical_ai custom72;
 classDef custom73 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_50_ethics_30_security custom73;
-classDef custom74 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases custom74;
-classDef custom75 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases_10_finance_md custom75;
+class n_50_ethics_20_legislation custom73;
+classDef custom74 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
+class n_50_ethics_30_security custom74;
+classDef custom75 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_60_domain_use_cases custom75;
 classDef custom76 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases_20_healthcare_md custom76;
+class n_60_domain_use_cases_10_finance_md custom76;
 classDef custom77 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases_30_accessibility_md custom77;
+class n_60_domain_use_cases_20_healthcare_md custom77;
 classDef custom78 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases_40_scientific_research_md custom78;
+class n_60_domain_use_cases_30_accessibility_md custom78;
 classDef custom79 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases_50_education_md custom79;
+class n_60_domain_use_cases_40_scientific_research_md custom79;
 classDef custom80 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases_60_ecommerce_md custom80;
+class n_60_domain_use_cases_50_education_md custom80;
 classDef custom81 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_60_domain_use_cases_70_legal_md custom81;
-classDef custom82 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths custom82;
-classDef custom83 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai custom83;
-classDef custom84 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_10_welcome_md custom84;
+class n_60_domain_use_cases_60_ecommerce_md custom81;
+classDef custom82 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_60_domain_use_cases_70_legal_md custom82;
+classDef custom83 fill:#d5b3ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_70_learning_paths custom83;
+classDef custom84 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_70_learning_paths_10_new_to_java_for_ai custom84;
 classDef custom85 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_20_link_40_ai_assisted_coding_10_coding_tools_md custom85;
+class n_70_learning_paths_10_new_to_java_for_ai_10_welcome_md custom85;
 classDef custom86 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_30_link_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md custom86;
+class n_70_learning_paths_10_new_to_java_for_ai_20_link_40_ai_assisted_coding_10_coding_tools_md custom86;
 classDef custom87 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_40_your_first_bot_md custom87;
+class n_70_learning_paths_10_new_to_java_for_ai_30_link_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_md custom87;
 classDef custom88 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_50_add_memory_md custom88;
+class n_70_learning_paths_10_new_to_java_for_ai_40_your_first_bot_md custom88;
 classDef custom89 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_60_link_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md custom89;
+class n_70_learning_paths_10_new_to_java_for_ai_50_add_memory_md custom89;
 classDef custom90 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_70_deploy_md custom90;
+class n_70_learning_paths_10_new_to_java_for_ai_60_link_10_genai_30_using_llms_in_code_20_functionality_30_tool_calling_10_overview_md custom90;
 classDef custom91 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_80_optional_java_tricks_md custom91;
+class n_70_learning_paths_10_new_to_java_for_ai_70_deploy_md custom91;
 classDef custom92 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_10_new_to_java_for_ai_90_now_what_md custom92;
-classDef custom93 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_20_finetune_your_first_model custom93;
-classDef custom94 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_30_new_to_java custom94;
+class n_70_learning_paths_10_new_to_java_for_ai_80_optional_java_tricks_md custom92;
+classDef custom93 fill:#ffd699,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_70_learning_paths_10_new_to_java_for_ai_90_now_what_md custom93;
+classDef custom94 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
+class n_70_learning_paths_20_finetune_your_first_model custom94;
 classDef custom95 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_40_new_to_ai custom95;
+class n_70_learning_paths_30_new_to_java custom95;
 classDef custom96 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_50_new_to_ml custom96;
-classDef custom97 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_60_training_first_model custom97;
+class n_70_learning_paths_40_new_to_ai custom96;
+classDef custom97 fill:lightgrey,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_70_learning_paths_50_new_to_ml custom97;
 classDef custom98 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_70_building_first_ai_app custom98;
+class n_70_learning_paths_60_training_first_model custom98;
 classDef custom99 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_80_langchain4j_tutorial custom99;
+class n_70_learning_paths_70_building_first_ai_app custom99;
 classDef custom100 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
-class n_70_learning_paths_90_spring_ai_tutorial custom100;
+class n_70_learning_paths_80_langchain4j_tutorial custom100;
+classDef custom101 fill:lightgrey,stroke:yellow,stroke-width:4px,stroke-dasharray:0;
+class n_70_learning_paths_90_spring_ai_tutorial custom101;
 linkStyle default interpolate basis
 ```
 

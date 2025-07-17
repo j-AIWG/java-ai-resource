@@ -1,14 +1,7 @@
-# 🤝 Contributing to Java & AI Resource Hub
-
-Thanks for helping build the most useful, well-structured resource landscape for Java and AI!
-
-We aim to make the resource:
-
-- **Easy to navigate**, even at depth
-- **Structured**, tagged, and filterable
-- **Low maintenance**, yet dynamically visualized
-- **Equally useful for beginners and experts**
-
+---
+title: Contributor Guide
+sidebar_label: Contributor Guide
+hide_title: false
 ---
 
 ## 📝 How to Add a Resource
@@ -42,19 +35,3 @@ Found a great external resource (documentation, tutorial, tool) that should be i
 5. Write your content under the frontmatter (after the second `---`)
 6. Make a PR 🙌 
 
-
----
-
-## 📌 About `index.md` Pages
-
-Each folder can contain an `index.md` file that:
-
-- Serves as the **landing page** for that topic
-- Should be **short and to the point** (5 paragraphs max)
-- Should **dispatch readers** toward subtopics depending on their persona:
-    - **Expected readers**: new to the topic / experienced / educators
-
----
-
-Thanks again for contributing 🙌  
-If you have ideas, improvements, need support, or are just to lazy to find the right spot for the article but still want to share it with us: open a Discussion or contact the maintainers.

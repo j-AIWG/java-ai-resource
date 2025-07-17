@@ -7,7 +7,8 @@ educational-resource/build
 # Generated files
 educational-resource/.docusaurus
 educational-resource/.cache-loader
-educational-resource/docs/99-contribute
+educational-resource/docs/99-contribute/*
+!educational-resource/docs/99-contribute/contributing-new-resource.md
 educational-resource/docs/**/index.md
 
 educational-resource/tooling/__pycache__

@@ -6,7 +6,7 @@ hide_title: false
 
 ## 🚀 Get Involved
 
-Do you know some article or resource that would fit in? Go ahead and add or create your resource! Step-by-step instructions: see [Contributor Guide for New Articles](/docs/contribute/contributing-new-resource)
+Do you know some article or resource that would fit in? Go ahead and add or create your resource! Step-by-step instructions: see [Contributor Guide](/docs/contribute/contributing-new-resource)
 
 Not sure where to start? Here's where you can make a big difference:
 
