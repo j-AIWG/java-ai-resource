@@ -12,7 +12,7 @@ const config = {
   },
 
   url: 'https://lizeraes.github.io',
-  baseUrl: '/ai-resource/',
+  baseUrl: '/java-ai-resource/',
 
   organizationName: 'lizeraes',
   projectName: 'java-ai-resource',
