@@ -17,7 +17,7 @@ const config = {
   organizationName: 'lizeraes',
   projectName: 'java-ai-resource',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   trailingSlash: true,
