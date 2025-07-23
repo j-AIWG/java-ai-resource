@@ -83,8 +83,12 @@ def evaluate_simple_condition(condition, frontmatter):
         field_value = frontmatter.get(field, '')
         return not isinstance(field_value, str) or field_value.strip() == ''
     else:
-        # Direct value comparison
-        return frontmatter.get(field) == value
+        # Direct value comparison - case insensitive for all fields
+        field_value = frontmatter.get(field)
+        if isinstance(field_value, str):
+            return field_value.lower() == value.lower()
+        else:
+            return field_value == value
 
 def extract_tags_from_frontmatter(frontmatter):
     """Extract all possible tags from frontmatter for styling."""
@@ -97,6 +101,20 @@ def extract_tags_from_frontmatter(frontmatter):
             value = frontmatter[field]
             if isinstance(value, str):
                 tags.append(f"{field}:{value}")
+    
+    # Handle external-link field
+    if 'external-link' in frontmatter:
+        value = frontmatter['external-link']
+        if isinstance(value, str):
+            tags.append(f"external-link:{value}")
+    
+    # Handle programming-language field (case insensitive)
+    if 'programming-language' in frontmatter:
+        value = frontmatter['programming-language']
+        if isinstance(value, str):
+            # Add both the original value and a case-insensitive version
+            tags.append(f"programming-language:{value}")
+            tags.append(f"programming-language:{value.lower()}")
     
     # Handle topics array
     if 'topics' in frontmatter:
@@ -135,6 +153,7 @@ def apply_styling_to_node(tags, style_config, frontmatter=None):
         'right_icons': [],  # Icons for right side
         'border_colors': [],  # List of border colors
         'background_colors': [],  # List of background colors
+        'background_opacities': [],  # List of background opacities
         'text_colors': [],  # List of text colors
         'border_styles': [],  # List of border styles
         'border_widths': [],  # List of border widths
@@ -158,8 +177,9 @@ def apply_styling_to_node(tags, style_config, frontmatter=None):
         
         # Apply all properties from matching tags
         if tag_matches:
-            # Handle list of property tuples
+            # Handle both list of property tuples and dict format
             if isinstance(tag_properties, list):
+                # Old format: list of tuples
                 for prop_key, prop_value in tag_properties:
                     if prop_key == 'icon':
                         # Check if this tag has icon_side specified
@@ -185,6 +205,29 @@ def apply_styling_to_node(tags, style_config, frontmatter=None):
                         styles['border_widths'].append(prop_value)
                     elif prop_key == 'exclude':
                         styles['exclude'] = prop_value
+            else:
+                # New format: dict
+                for prop_key, prop_value in tag_properties.items():
+                    if prop_key == 'icon':
+                        icon_side = tag_properties.get('icon_side', 'left')
+                        if icon_side == 'right':
+                            styles['right_icons'].append(prop_value)
+                        else:
+                            styles['left_icons'].append(prop_value)
+                    elif prop_key == 'border_color':
+                        styles['border_colors'].append(prop_value)
+                    elif prop_key == 'background_color':
+                        styles['background_colors'].append(prop_value)
+                    elif prop_key == 'background_opacity':
+                        styles['background_opacities'].append(prop_value)
+                    elif prop_key == 'text_color':
+                        styles['text_colors'].append(prop_value)
+                    elif prop_key == 'border_style':
+                        styles['border_styles'].append(prop_value)
+                    elif prop_key == 'border_width':
+                        styles['border_widths'].append(prop_value)
+                    elif prop_key == 'exclude':
+                        styles['exclude'] = prop_value
     
     return styles
 
@@ -194,9 +237,29 @@ def create_mermaid_node_style(styles, default_fill=None):
     
     # Use the last background color, or default
     background_colors = styles.get('background_colors', [])
+    background_opacities = styles.get('background_opacities', [])
     fill_color = background_colors[-1] if background_colors else default_fill
+    
     if fill_color:
-        style_parts.append(f"fill:{fill_color}")
+        # Apply opacity if specified
+        if background_opacities:
+            opacity = background_opacities[-1]
+            # For Mermaid, we can use rgba or add opacity to hex colors
+            if fill_color.startswith('#') and len(fill_color) == 7:
+                # Convert hex to rgba for opacity support
+                r = int(fill_color[1:3], 16)
+                g = int(fill_color[3:5], 16)
+                b = int(fill_color[5:7], 16)
+                try:
+                    opacity_val = float(opacity)
+                    style_parts.append(f"fill:rgba({r},{g},{b},{opacity_val})")
+                except:
+                    style_parts.append(f"fill:{fill_color}")
+            else:
+                # For named colors, just use the color (Mermaid doesn't support opacity for named colors)
+                style_parts.append(f"fill:{fill_color}")
+        else:
+            style_parts.append(f"fill:{fill_color}")
     
     # Use the last border color if available
     border_colors = styles.get('border_colors', [])
@@ -641,6 +704,7 @@ def create_compact_legend(style_classes, style_config):
         icon = tag_props.get('icon', '')
         border_color = tag_props.get('border_color', '')
         background_color = tag_props.get('background_color', '')
+        background_opacity = tag_props.get('background_opacity', '')
         
         if icon:
             # Handle AND conditions specially
@@ -654,9 +718,14 @@ def create_compact_legend(style_classes, style_config):
             border_tags.append(f"**border:{border_dot}** {tag}")
         
         if background_color:
-            if background_color not in background_groups:
-                background_groups[background_color] = []
-            background_groups[background_color].append(tag)
+            # Add opacity info to the background color key if present
+            bg_key = background_color
+            if background_opacity:
+                bg_key = f"{background_color} (opacity: {background_opacity})"
+            
+            if bg_key not in background_groups:
+                background_groups[bg_key] = []
+            background_groups[bg_key].append(tag)
     
     legend_lines = []
     

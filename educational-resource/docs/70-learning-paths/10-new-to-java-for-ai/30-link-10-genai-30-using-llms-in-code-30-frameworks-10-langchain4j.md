@@ -12,6 +12,7 @@ visibility: public
 # priority: high        # high / medium (for missing articles)
 # review-reason: "something that needs double checking or changing"
 #                       # required when status = review-needed
+# programming-language: "Java"  # or others
 ---
 
 # Link 10 Genai 30 Using Llms In Code 30 Frameworks 10 Langchain4J
