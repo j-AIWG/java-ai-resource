@@ -40,10 +40,10 @@ n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md["Hu
 n_10_genai_20_all_about_models_40_model_providers_20_local --> n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md
 n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md["Ollama"]
 n_10_genai_20_all_about_models_40_model_providers_20_local --> n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md
+n_10_genai_20_all_about_models_40_model_providers_20_local_30_docker_model_runner_md["Docker Model Runner ☕️"]
+n_10_genai_20_all_about_models_40_model_providers_20_local --> n_10_genai_20_all_about_models_40_model_providers_20_local_30_docker_model_runner_md
 n_10_genai_30_using_llms_in_code["Using LLMs in Code"]
 n_10_genai --> n_10_genai_30_using_llms_in_code
-n_10_genai_30_using_llms_in_code_10_basics_md["Basics"]
-n_10_genai_30_using_llms_in_code --> n_10_genai_30_using_llms_in_code_10_basics_md
 n_10_genai_30_using_llms_in_code_20_functionality["Functionality"]
 n_10_genai_30_using_llms_in_code --> n_10_genai_30_using_llms_in_code_20_functionality
 n_10_genai_30_using_llms_in_code_20_functionality_10_chatbots_md["Chatbots"]
@@ -228,8 +228,8 @@ click n_10_genai_20_all_about_models_40_model_providers_10_commercial_20_gemini_
 click n_10_genai_20_all_about_models_40_model_providers_20_local "/java-ai-resource/docs/genai/all-about-models/model-providers/local"
 click n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md "/java-ai-resource/docs/genai/all-about-models/model-providers/local/huggingface"
 click n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md "/java-ai-resource/docs/genai/all-about-models/model-providers/local/ollama"
+click n_10_genai_20_all_about_models_40_model_providers_20_local_30_docker_model_runner_md "/java-ai-resource/docs/genai/all-about-models/model-providers/local/docker-model-runner"
 click n_10_genai_30_using_llms_in_code "/java-ai-resource/docs/genai/using-llms-in-code"
-click n_10_genai_30_using_llms_in_code_10_basics_md "/java-ai-resource/docs/genai/using-llms-in-code/basics"
 click n_10_genai_30_using_llms_in_code_20_functionality "/java-ai-resource/docs/genai/using-llms-in-code/functionality"
 click n_10_genai_30_using_llms_in_code_20_functionality_10_chatbots_md "/java-ai-resource/docs/genai/using-llms-in-code/functionality/chatbots"
 click n_10_genai_30_using_llms_in_code_20_functionality_20_memory_md "/java-ai-resource/docs/genai/using-llms-in-code/functionality/memory"
@@ -356,10 +356,10 @@ classDef custom13 fill:#e6f3ff;
 class n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md custom13;
 classDef custom14 fill:#e6f3ff;
 class n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md custom14;
-classDef custom15 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
-class n_10_genai_30_using_llms_in_code custom15;
-classDef custom16 fill:#fff2e6;
-class n_10_genai_30_using_llms_in_code_10_basics_md custom16;
+classDef custom15 fill:#b3d9ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_10_genai_20_all_about_models_40_model_providers_20_local_30_docker_model_runner_md custom15;
+classDef custom16 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
+class n_10_genai_30_using_llms_in_code custom16;
 classDef custom17 fill:#fff2e6;
 class n_10_genai_30_using_llms_in_code_20_functionality custom17;
 classDef custom18 fill:#e6ffe6;

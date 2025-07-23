@@ -88,4 +88,8 @@ Augmented LLMs that can 'act' this way start to behave like agents, specialized 
 
 ---
 
-**Ready to dive in?** Start with the [basics](/docs/genai/using-llms-in-code/basics/), check in more detail how things like [memory](/docs/genai/using-llms-in-code/functionality/memory/), [RAG](/docs/genai/using-llms-in-code/functionality/content-retrieval/) and [tool calling](/docs/genai/using-llms-in-code/functionality/tool-calling/) work in [functionality](/docs/genai/using-llms-in-code/functionality/) or jump straight to your preferred [framework](/docs/genai/using-llms-in-code/frameworks/).
+**Ready to dive in?** Check in more detail how things like [memory](/docs/genai/using-llms-in-code/functionality/memory/), [RAG](/docs/genai/using-llms-in-code/functionality/content-retrieval/) and [tool calling](/docs/genai/using-llms-in-code/functionality/tool-calling/) work in [functionality](/docs/genai/using-llms-in-code/functionality/) or jump straight to your preferred [framework](/docs/genai/using-llms-in-code/frameworks/).
+
+---
+
+*Written by Lize Raes*
