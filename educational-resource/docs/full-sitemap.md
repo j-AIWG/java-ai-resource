@@ -356,7 +356,7 @@ classDef custom13 fill:#e6f3ff;
 class n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md custom13;
 classDef custom14 fill:#e6f3ff;
 class n_10_genai_20_all_about_models_40_model_providers_20_local_20_ollama_md custom14;
-classDef custom15 fill:#ffe6e6;
+classDef custom15 fill:#ffcccc,stroke:green,stroke-width:4px,stroke-dasharray:0;
 class n_10_genai_30_using_llms_in_code custom15;
 classDef custom16 fill:#fff2e6;
 class n_10_genai_30_using_llms_in_code_10_basics_md custom16;
