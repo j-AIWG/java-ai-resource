@@ -8,10 +8,10 @@
     "programming-language:java": { "icon": "☕️", "icon_side": "right" },
     "programming-language:python": { "icon": "🐍", "icon_side": "right" },
     "programming-language:kotlin": { "icon": "🐱", "icon_side": "right" },
-    "level:beginner": { "border_color": "green", "border_width": "4px" },
-    "level:intermediate": { "border_color": "yellow", "border_width": "4px" },
-    "level:advanced": { "border_color": "orange", "border_width": "4px" },
-    "level:expert": { "border_color": "red", "border_width": "4px" },
+    "level:beginner AND status:!missing": { "border_color": "green", "border_width": "4px" },
+    "level:intermediate AND status:!missing": { "border_color": "yellow", "border_width": "4px" },
+    "level:advanced AND status:!missing": { "border_color": "orange", "border_width": "4px" },
+    "level:expert AND status:!missing": { "border_color": "red", "border_width": "4px" },
     "visibility:internal": { "exclude": true },
     "visibility:archived": { "exclude": true }
   }

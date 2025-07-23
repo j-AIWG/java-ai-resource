@@ -8,7 +8,7 @@ status: published
 visibility: public
 
 # OPTIONAL TAGS:
-# external-link: https://somelink.dev  #if the resource is external
+external-link: https://whylabs.ai/learning-center/introduction-to-llms/understanding-large-language-model-architectures
 # priority: high        # high / medium (for missing articles)
 # review-reason: "something that needs double checking or changing"
 #                       # required when status = review-needed
@@ -18,7 +18,10 @@ visibility: public
 # LLM Architecture
 
 :::tip External Resource
-👉 <a href="https://whylabs.ai/learning-center/introduction-to-llms/understanding-large-language-model-architectures" target="_blank" rel="noopener noreferrer">Read the full article</a>
+<br />
+<h3><a href="https://whylabs.ai/learning-center/introduction-to-llms/understanding-large-language-model-architectures" target="_blank" rel="noopener noreferrer">👉 Read the full article</a></h3>
+
+**Author:** WHYLABS
 :::
 
 

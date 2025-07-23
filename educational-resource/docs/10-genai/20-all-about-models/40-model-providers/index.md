@@ -4,7 +4,7 @@ sidebar_position: 40
 hide_title: true
 
 level: beginner
-status: draft
+status: stub
 visibility: public
 
 # OPTIONAL TAGS:
@@ -15,8 +15,8 @@ visibility: public
 # programming-language: "Java"  # or others
 ---
 
-:::note 📝 This article is a draft
-This article is still being written and may be incomplete.
+:::note ⚠️ This article is a stub
+This article contains minimal content and needs to be expanded.
 :::
 
 > ⚠️ **AI generated for demo purposes, needs updating**

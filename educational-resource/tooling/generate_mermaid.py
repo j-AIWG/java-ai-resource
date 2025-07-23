@@ -82,6 +82,14 @@ def evaluate_simple_condition(condition, frontmatter):
     elif value == 'is_empty':
         field_value = frontmatter.get(field, '')
         return not isinstance(field_value, str) or field_value.strip() == ''
+    elif value.startswith('!'):
+        # Handle NOT conditions like !missing
+        not_value = value[1:]  # Remove the ! prefix
+        field_value = frontmatter.get(field)
+        if isinstance(field_value, str):
+            return field_value.lower() != not_value.lower()
+        else:
+            return field_value != not_value
     else:
         # Direct value comparison - case insensitive for all fields
         field_value = frontmatter.get(field)
@@ -197,6 +205,8 @@ def apply_styling_to_node(tags, style_config, frontmatter=None):
                         styles['border_colors'].append(prop_value)
                     elif prop_key == 'background_color':
                         styles['background_colors'].append(prop_value)
+                    elif prop_key == 'background_opacity':
+                        styles['background_opacities'].append(prop_value)
                     elif prop_key == 'text_color':
                         styles['text_colors'].append(prop_value)
                     elif prop_key == 'border_style':
@@ -241,25 +251,50 @@ def create_mermaid_node_style(styles, default_fill=None):
     fill_color = background_colors[-1] if background_colors else default_fill
     
     if fill_color:
-        # Apply opacity if specified
+        # Apply opacity if specified - just use a lighter version of the color
         if background_opacities:
-            opacity = background_opacities[-1]
-            # For Mermaid, we can use rgba or add opacity to hex colors
-            if fill_color.startswith('#') and len(fill_color) == 7:
-                # Convert hex to rgba for opacity support
-                r = int(fill_color[1:3], 16)
-                g = int(fill_color[3:5], 16)
-                b = int(fill_color[5:7], 16)
-                try:
-                    opacity_val = float(opacity)
-                    style_parts.append(f"fill:rgba({r},{g},{b},{opacity_val})")
-                except:
-                    style_parts.append(f"fill:{fill_color}")
+            # Simple mapping: make the color lighter by using a lighter hex
+            if fill_color.startswith('#'):
+                # For hex colors, use a lighter version
+                if fill_color == "#b3d9ff":  # light blue
+                    fill_color = "#e6f3ff"
+                elif fill_color == "#d5b3ff":  # light purple
+                    fill_color = "#f0e6ff"
+                elif fill_color == "#ffcccc":  # light red
+                    fill_color = "#ffe6e6"
+                elif fill_color == "#ffd699":  # light orange
+                    fill_color = "#fff2e6"
+                elif fill_color == "#d0f0c0":  # light green
+                    fill_color = "#e6ffe6"
+                else:
+                    # For any other hex, just use a lighter version
+                    fill_color = "#f5f5f5"  # very light gray
             else:
-                # For named colors, just use the color (Mermaid doesn't support opacity for named colors)
-                style_parts.append(f"fill:{fill_color}")
+                # For named colors, use light gray
+                fill_color = "#f5f5f5"
+        
+        style_parts.append(f"fill:{fill_color}")
+    elif background_opacities and default_fill:
+        # Special case: apply opacity to default_fill when no explicit background_color but opacity is specified
+        # This handles status:missing which only has background_opacity
+        if default_fill.startswith('#'):
+            # Use lighter version of the depth color
+            if default_fill == "#b3d9ff":  # light blue
+                fill_color = "#e6f3ff"
+            elif default_fill == "#d5b3ff":  # light purple
+                fill_color = "#f0e6ff"
+            elif default_fill == "#ffcccc":  # light red
+                fill_color = "#ffe6e6"
+            elif default_fill == "#ffd699":  # light orange
+                fill_color = "#fff2e6"
+            elif default_fill == "#d0f0c0":  # light green
+                fill_color = "#e6ffe6"
+            else:
+                fill_color = "#f5f5f5"
         else:
-            style_parts.append(f"fill:{fill_color}")
+            fill_color = "#f5f5f5"
+        
+        style_parts.append(f"fill:{fill_color}")
     
     # Use the last border color if available
     border_colors = styles.get('border_colors', [])
