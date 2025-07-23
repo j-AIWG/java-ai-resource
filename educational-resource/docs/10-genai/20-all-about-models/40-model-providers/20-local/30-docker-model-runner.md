@@ -3,7 +3,7 @@ title: Docker Model Runner
 sidebar_position: 30
 hide_title: true
 
-level: beginner
+level: advanced
 status: published
 visibility: public
 

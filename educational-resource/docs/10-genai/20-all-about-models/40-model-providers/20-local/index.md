@@ -3,7 +3,7 @@ title: Local Models
 sidebar_position: 10
 hide_title: true
 
-level: beginner
+level: intermediate
 status: published
 visibility: public
 
