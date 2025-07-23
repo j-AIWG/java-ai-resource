@@ -21,7 +21,7 @@ external-link: https://whylabs.ai/learning-center/introduction-to-llms/understan
 <br />
 <h3><a href="https://whylabs.ai/learning-center/introduction-to-llms/understanding-large-language-model-architectures" target="_blank" rel="noopener noreferrer">👉 Read the full article</a></h3>
 
-**Author:** WHYLABS
+**Source:** WHYLABS
 :::
 
 

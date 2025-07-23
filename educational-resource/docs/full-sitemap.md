@@ -34,7 +34,7 @@ n_10_genai_20_all_about_models_40_model_providers_10_commercial_10_openai_md["Op
 n_10_genai_20_all_about_models_40_model_providers_10_commercial --> n_10_genai_20_all_about_models_40_model_providers_10_commercial_10_openai_md
 n_10_genai_20_all_about_models_40_model_providers_10_commercial_20_gemini_md["Gemini"]
 n_10_genai_20_all_about_models_40_model_providers_10_commercial --> n_10_genai_20_all_about_models_40_model_providers_10_commercial_20_gemini_md
-n_10_genai_20_all_about_models_40_model_providers_20_local["Local"]
+n_10_genai_20_all_about_models_40_model_providers_20_local["Local Models"]
 n_10_genai_20_all_about_models_40_model_providers --> n_10_genai_20_all_about_models_40_model_providers_20_local
 n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md["Huggingface"]
 n_10_genai_20_all_about_models_40_model_providers_20_local --> n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md
@@ -350,7 +350,7 @@ classDef custom10 fill:#e6f3ff;
 class n_10_genai_20_all_about_models_40_model_providers_10_commercial_10_openai_md custom10;
 classDef custom11 fill:#e6f3ff;
 class n_10_genai_20_all_about_models_40_model_providers_10_commercial_20_gemini_md custom11;
-classDef custom12 fill:#e6ffe6;
+classDef custom12 fill:#d0f0c0,stroke:green,stroke-width:4px,stroke-dasharray:0;
 class n_10_genai_20_all_about_models_40_model_providers_20_local custom12;
 classDef custom13 fill:#e6f3ff;
 class n_10_genai_20_all_about_models_40_model_providers_20_local_10_huggingface_md custom13;
@@ -392,7 +392,7 @@ classDef custom31 fill:#e6ffe6;
 class n_10_genai_30_using_llms_in_code_30_frameworks_20_springai_md custom31;
 classDef custom32 fill:#e6ffe6;
 class n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j custom32;
-classDef custom33 fill:#e6f3ff;
+classDef custom33 fill:#b3d9ff,stroke:green,stroke-width:4px,stroke-dasharray:0;
 class n_10_genai_30_using_llms_in_code_30_frameworks_10_langchain4j_10_langchain4j_doc_md custom33;
 classDef custom34 fill:#ffe6e6;
 class n_10_genai_40_inference custom34;
